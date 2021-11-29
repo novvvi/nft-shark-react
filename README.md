@@ -1,4 +1,4 @@
-# taro-dashboard
+# nft-shark-react
 
 Clone Repository
 
