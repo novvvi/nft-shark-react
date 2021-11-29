@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgb(10 13 26);
+    background-image: url(../imgs/bg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+form ul input, form input, select {
+    background: transparent;
+    border: 2px solid #2A2C48;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #767AA0;
+    padding: 7px;
+    margin: 10px 0px;
+    width: 100%;
+    height: 40px;
+}
+
+select:focus, option:focus {
+    outline:none;
+    border: 2px solid #2A2C48;
+    box-shadow:none;
+}
+
+nav {
+    display: flex;
+    position: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #313131;
+    background: linear-gradient(#A394F2, #917DE8);
+    padding: 15px 20% 100px 20%;
+}
+
+nav .logo img {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 5px;
+    margin-left: auto !important;
+}
+
+nav ul a {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    color: rgb(245, 243, 253);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav ul a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.container.dashboard {
+    margin-top: -60px;
+    max-width: 1120px;
+}
+
+.dashboard .row div .card {
+    background-color: #111327;
+    /* height: 260px; */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .row div .card.generate {
+    padding: 15px 30px;
+    height: auto !important;
+}
+
+.dashboard .row div .card.proxy-list {
+    padding: 0;
+    background: rgb(10, 12, 26);
+    max-height: 370px;
+    min-height: 370px;
+    height: auto !important;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .row div .card.proxy-list div.header {
+    background: #111327;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 45px;
+}
+
+.dashboard .row div .card.proxy-list p {
+    text-align: left;
+    font-weight: 600;
+}
+
+.dashboard .row div .card.generate p {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.dashboard .row div .card img.waves {
+    height: 190px;
+}
+
+.stats {
+    margin-top: 20px !important;
+}
+
+.stats .col-9 {
+    text-align: left;display: flex;height: 36px;
+}
+
+.stats .col-9 img {
+    margin-right: 10px;
+}
+
+.stats .col-9 div {
+    font-size: 9px;
+    overflow: hidden;
+}
+
+.stats .col-9 div p:nth-child(1) {
+    margin: initial;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.stats .col-9 div p:nth-child(2) {
+    color: #767AA0;
+    margin-top: 7px;
+}
+
+.stats .col-3 {
+    text-align: right;
+}
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 700;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(#A394F2, #917DE8);
+    cursor: pointer;
+}
+
+.h-370 {
+    height: 370px !important;
+}
+
+.h-340 {
+    height: 340px !important;
+}
+
+.gen-form button {
+    margin-top: 10px;
+}
+
+.col.copy {
+    text-align: right;
+}
+
+.active-border {
+    border: 1px solid #2A2C48;
+}
+
+.chart-options {
+    display: inline-flex;
+}
+
+.chart-options select {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.chart-options p.qty {
+    margin-top: 17px;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.chart-options p.scale {
+    margin-top: 24px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.chart-options p.text {
+    margin-top: 29px;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #767AA0;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.boba {
+    background-image: url(../imgs/boba.svg);
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -90px;
+    height: 360px;
+}
+
+.boba .row {
+    text-align: left;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    position: relative;
+    top: 87%;
+}
+
+.boba .row img {
+    /* margin-right: 10px; */
+    height: 35px;
+    width: auto;
+}
+
+.boba .row div {
+    font-size: 9px;
+    overflow: hidden;
+    width: auto;
+}
+
+.boba .row div p:nth-child(1) {
+    margin: initial;
+    /* font-weight: 400; */
+    font-size: 12px;
+}
+
+.boba .row div p:nth-child(2) {
+    color: #767AA0;
+    margin-top: 7px;
+    font-size: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 90px;
+    font-weight: 400;
+    padding: 30px;
+    text-align: center;
+}
+
+footer img {
+    height: 60px;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.scrollbox {
+    background: transparent;
+    height: fit-content;
+    flex-grow: 1;
+    margin: 10px;
+    z-index: 0;
+    border-radius: 0px 0px 10px 10px;
+    overflow-y: scroll;
+    text-align: left;
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.m-10 {
+    margin-bottom: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #111327;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.scrollbox::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: rgb(10, 12, 26);
+}
+
+.scrollbox::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #9785EB;
+}
+
+.scrollbox p {
+    width: 247px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #767AA0;
+    margin-left: 25px;
+    line-height: 20px;
+}
+
+.chart-container {
+    height: 100%;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+
+.height-auto {
+    height: auto !important;
+}
